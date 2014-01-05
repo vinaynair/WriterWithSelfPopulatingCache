@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache name="cacheManagerOne" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+
+    <cache name="writerCache" maxEntriesLocalHeap="100">
+        <!-- using defaults -->
+        <cacheWriter>
+            <cacheWriterFactory class="demo.terracotta.writer.SimpleWriterFactory"/>
+        </cacheWriter>
+    </cache>
+
+
+</ehcache>
